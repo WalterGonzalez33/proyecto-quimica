@@ -10,3 +10,9 @@ body{
     font-size: 30px;
     background-color: aqua;
 }
+
+.div p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    color: azure;
+}
