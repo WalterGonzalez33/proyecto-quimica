@@ -4,14 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e51eb069cd.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/menu.css">
     <title>quimica</title>
 </head>
 <body>
-    <div class="container-flex">
-        <div class="div">
-            <P>texto</P>
+    <header class="menu">
+
+        <div class="container-flex menu-pc">
+
+            <div class="logo"><img src="img/logo.png" alt="logo de quimica"></div>
+       
+
+            <div class="texto">
+                <p>Quimica</p>
+            </div>
+
+            <div class="list-opcion">
+                <ul>
+                    <li><a href="#" class="volver-arriba">inicio</a></li>
+                    <li><a href="#" class="scroll-suave">introduccion</a></li>
+                    <li><a href="#" class="scroll-suave">desarrollo</a></li>
+                    <li><a href="#" class="scroll-suave">resultados</a></li>
+                    <li><a href="#" class="scroll-suave">conclusion</a></li>
+                    <li><a href="#" class="scroll-suave">biblografia</a></li>
+                    <li><a href="#" class="scroll-suave">anexo</a></li>
+                </ul>
+            </div>
+
         </div>
-    </div>
+
+        <!-- menu movil -->
+
+        <div class="container-flex menu-movil">
+
+            <div class="logo"><img src="img/logo.png" alt="logo de quimica">
+                <div class="texto">
+                    <p>Quimica</p>
+                </div>
+            </div>
+
+            <div class="burgue-menu" id="burgue_menu">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <div class="slideMenu" id="slideMenu">
+
+                <div class="list-opcion">
+                    <ul>
+                        <li><a href="#" class="volver-arriba movil">inicio</a></li>
+                        <li><a href="#" class="scroll-suave movil">introduccion</a></li>
+                        <li><a href="#" class="scroll-suave movil">desarrollo</a></li>
+                        <li><a href="#" class="scroll-suave movil">resultados</a></li>
+                        <li><a href="#" class="scroll-suave movil">conclusion</a></li>
+                        <li><a href="#" class="scroll-suave movil">biblografia</a></li>
+                        <li><a href="#" class="scroll-suave movil">anexo</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- scripts -->
+    <script src="javaScript/menuMovil.js"></script>
 </body>
 </html>
