@@ -15,7 +15,6 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
 }
 .menu {
   position: fixed;
@@ -26,26 +25,15 @@ body {
   border-bottom: 1px solid #0dbb88;
 }
 .menu .container-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
 }
 .menu .container-flex .logo {
   width: 130px;
   height: 130px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .menu .container-flex .logo img {
   width: 110px;
@@ -55,15 +43,9 @@ body {
   margin-left: 0px;
   width: 200px;
   height: 130px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   padding: 0;
 }
 .menu .container-flex .texto p {
@@ -73,21 +55,12 @@ body {
   margin-left: 0px;
 }
 .menu .container-flex .list-opcion {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   width: 60%;
   height: 130px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   margin-right: 50px;
   position: absolute;
   right: 0;
@@ -106,7 +79,6 @@ body {
 .menu .container-flex .list-opcion ul li:hover {
   background-color: #0dbb88;
   border-radius: 6px;
-  -webkit-transition: all 0.9s ease;
   transition: all 0.9s ease;
 }
 .menu .container-flex .list-opcion ul li a {
@@ -116,7 +88,6 @@ body {
   font-family: 'Lato', sans-serif;
 }
 .menu .container-flex .list-opcion ul li a:hover {
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   color: rgba(0, 0, 0, 0.972);
 }
@@ -139,13 +110,10 @@ body {
   width: 80%;
   left: -80%;
   margin-right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   height: 310px;
   background-color: #131313;
   border-bottom-right-radius: 10px;
-  -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
 .menu .menu-movil .slideMenu .list-opcion ul {
@@ -166,7 +134,6 @@ body {
 .menu .menu-movil .slideMenu .list-opcion ul li:hover {
   background-color: unset;
   border-radius: unset;
-  -webkit-transition: unset;
   transition: unset;
 }
 .menu .menu-movil .slideMenu .list-opcion ul li a {
@@ -174,15 +141,9 @@ body {
 }
 .menu .menu-movil .burgue-menu {
   font-size: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: rgba(13, 187, 135, 0.7);
   margin-right: 10px;
   position: absolute;
@@ -199,8 +160,6 @@ body {
     display: none;
   }
   .menu .menu-movil {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
 }
@@ -239,33 +198,20 @@ body {
   background-color: rgba(0, 0, 0, 0.19);
 }
 .resumen .flex-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap ;
-      flex-wrap: wrap ;
+  flex-wrap: wrap ;
   width: 100%;
   height: 100%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-around;
+  align-items: center;
 }
 .resumen .flex-container .texto {
   width: 50%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
   color: rgba(0, 0, 0, 0.828);
 }
 .resumen .flex-container .texto .nombreProf {
@@ -297,15 +243,9 @@ body {
 .resumen .flex-container .imagenLaboratorio {
   width: 50%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .resumen .flex-container .imagenLaboratorio img {
   width: 340px;
@@ -323,43 +263,25 @@ body {
     top: 120px;
   }
   .resumen .flex-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap ;
-        flex-wrap: wrap ;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-wrap: wrap ;
+    justify-content: space-around;
+    align-items: center;
   }
   .resumen .flex-container .texto {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     height: 50%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     color: rgba(0, 0, 0, 0.828);
   }
   .resumen .flex-container .imagenLaboratorio {
     width: 100%;
     height: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .resumen .flex-container .imagenLaboratorio img {
     width: 230px;
@@ -375,29 +297,17 @@ body {
     margin-top: 0 ;
   }
   .resumen .flex-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap ;
-        flex-wrap: wrap ;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-wrap: wrap ;
+    justify-content: space-around;
+    align-items: center;
   }
   .resumen .flex-container .texto {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     height: 50%;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    align-items: center;
+    justify-content: center;
     color: rgba(0, 0, 0, 0.828);
   }
   .resumen .flex-container .texto .textResumen {
@@ -407,20 +317,131 @@ body {
   .resumen .flex-container .imagenLaboratorio {
     width: 100%;
     height: 50%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin-top: 48px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: center;
+    align-items: center;
   }
   .resumen .flex-container .imagenLaboratorio img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+  }
+}
+.queSon {
+  width: 100%;
+  height: 710px;
+  border-top-left-radius: 35px ;
+  border-top-right-radius: 35px ;
+  border-bottom-left-radius: 35px ;
+  border-bottom-right-radius: 35px ;
+  background-image: url("../img/fondoAmarillo.lpg.jpg");
+  background-size: cover;
+  z-index: 900;
+  position: relative;
+  bottom: 165px;
+}
+.queSon::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.19);
+  border-top-left-radius: 35px ;
+  border-top-right-radius: 35px ;
+  border-bottom-left-radius: 35px ;
+  border-bottom-right-radius: 35px ;
+}
+.queSon .flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+.queSon .flex-container .col {
+  width: 50%;
+}
+.queSon .flex-container .col .arriba {
+  height: 50%;
+}
+.queSon .flex-container .col .abajo {
+  height: 50%;
+}
+.queSon .flex-container .col .pregunta {
+  font-size: 35px;
+  font-family: 'Work Sans', sans-serif;
+  color: #0dbb88;
+  text-align: center;
+  margin: 50px 0;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.931);
+}
+.queSon .flex-container .col .respuesta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.queSon .flex-container .col .respuesta p {
+  width: 65%;
+  font-size: 22px;
+  margin: 0 auto;
+  font-family: 'Nunito', sans-serif;
+  color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  margin: 25px;
+}
+@media all and (max-width: 800px) and (min-width: 300px) {
+  .queSon {
+    height: 2070px;
+  }
+  .queSon .flex-container {
+    display: inline-block;
+  }
+  .queSon .flex-container .col {
+    width: 100%;
+  }
+  .queSon .flex-container .col .arriba {
+    width: 100%;
+  }
+  .queSon .flex-container .col .abajo {
+    width: 100%;
+  }
+  .queSon .flex-container .col .pregunta {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 30px;
+  }
+  .queSon .flex-container .col .respuesta p {
+    width: 92%;
+  }
+}
+@media all and (min-width: 800px) {
+  .queSon {
+    height: 1050px;
+  }
+  .queSon .flex-container .col .pregunta {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 30px;
+  }
+  .queSon .flex-container .col .respuesta p {
+    width: 92%;
+  }
+}
+@media all and (min-width: 1400px) and (max-width: 1900px) {
+  .queSon {
+    height: 1100px;
+  }
+  .queSon .flex-container .col .pregunta {
+    margin-top: 80px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 30px;
+  }
+  .queSon .flex-container .col .respuesta p {
+    width: 92%;
   }
 }

@@ -1,0 +1,169 @@
+@import url(sectionResultados.less);
+
+.parallax4{
+    bottom: 500px;
+    height: 600px;
+}
+
+.anexo{
+    width: 100%;
+    height: 1000px;
+    border-bottom: 8px solid @verdeLogo;
+    border-top-left-radius:35px ;
+    border-top-right-radius:35px ;
+    background-image:url("../img/fondoAmarillo.lpg.jpg") ;
+    background-size: cover;
+    z-index: 900;
+    position: relative;
+    bottom: 500px;
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        display:block;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.22);
+        border-top-left-radius:35px ;
+        border-top-right-radius:35px ;
+    }
+    .flex-container{
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+
+        .titulo{
+            font-size: 35px;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+            color: @verdeLogo;
+            font-family: @fuenteLogo;
+            text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.931);
+        }
+
+        .cajaLuz{
+            width: 380px;
+            height: 350px;
+            margin: 10px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+
+            &.fotoAnexo1{
+                background-image: url(../img/anexo1.jpg);
+                border-radius: 10px;
+            }
+            &.fotoAnexo2{
+                background-image: url(../img/anexo2.jpg);
+                border-radius: 10px;
+            }
+            &.fotoAnexo3{
+                background-image: url(../img/anexo3.jpg);
+                border-radius: 10px;
+            }
+            &.fotoAnexo4{
+                background-image: url(../img/anexo4.jpg);
+                border-radius: 10px;
+            }
+            &.fotoAnexo5{
+                background-image: url(../img/anexo5.jpg);
+                border-radius: 10px;
+            }
+            &.fotoAnexo6{
+                background-image: url(../img/anexo6.jpg);
+                border-radius: 10px;
+            }
+            &.fotoAnexo7{
+                background-image: url(../img/anexo7.jpg);
+                border-radius: 10px;
+            }
+            &.fotoAnexo8{
+                background-image: url(../img/anexo8.jpg);
+                border-radius: 10px;
+            }
+        }
+    }
+}
+@media all and (min-width:300px) and (max-width:900px){
+    .anexo{
+        width: 100%;
+        height: 3200px;
+        border-top-left-radius:35px ;
+        border-top-right-radius:35px ;
+        background-image:url("../img/fondoAmarillo.lpg.jpg") ;
+        background-size: cover;
+        z-index: 900;
+        position: relative;
+        bottom: 650px;
+        &::before{
+            content: "";
+            width: 100%;
+            height: 100%;
+            display:block;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.22);
+            border-top-left-radius:35px ;
+            border-top-right-radius:35px ;
+        }
+        .flex-container{
+            display:flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+    
+            .titulo{
+                font-size: 35px;
+                width: 100%;
+                text-align: center;
+                color: @verdeLogo;
+                font-family: @fuenteLogo;
+                text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.931);
+            }
+    
+            .cajaLuz{
+                width: 380px;
+                height: 350px;
+                margin: 10px;
+                background-size: cover;
+                background-position: center;
+                border-radius: 10px;
+    
+                &.fotoAnexo1{
+                    background-image: url(../img/anexo1.jpg);
+                    border-radius: 10px;
+                }
+                &.fotoAnexo2{
+                    background-image: url(../img/anexo2.jpg);
+                    border-radius: 10px;
+                }
+                &.fotoAnexo3{
+                    background-image: url(../img/anexo3.jpg);
+                    border-radius: 10px;
+                }
+                &.fotoAnexo4{
+                    background-image: url(../img/anexo4.jpg);
+                    border-radius: 10px;
+                }
+                &.fotoAnexo5{
+                    background-image: url(../img/anexo5.jpg);
+                    border-radius: 10px;
+                }
+                &.fotoAnexo6{
+                    background-image: url(../img/anexo6.jpg);
+                    border-radius: 10px;
+                }
+                &.fotoAnexo7{
+                    background-image: url(../img/anexo7.jpg);
+                    border-radius: 10px;
+                }
+                &.fotoAnexo8{
+                    background-image: url(../img/anexo8.jpg);
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}

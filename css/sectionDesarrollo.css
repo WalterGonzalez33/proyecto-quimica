@@ -15,7 +15,6 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: black;
 }
 .menu {
   position: fixed;
@@ -422,5 +421,341 @@ body {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+  }
+}
+.queSon {
+  width: 100%;
+  height: 710px;
+  border-top-left-radius: 35px ;
+  border-top-right-radius: 35px ;
+  border-bottom-left-radius: 35px ;
+  border-bottom-right-radius: 35px ;
+  background-image: url("../img/fondoAmarillo.lpg.jpg");
+  background-size: cover;
+  z-index: 900;
+  position: relative;
+  bottom: 165px;
+}
+.queSon::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.19);
+  border-top-left-radius: 35px ;
+  border-top-right-radius: 35px ;
+  border-bottom-left-radius: 35px ;
+  border-bottom-right-radius: 35px ;
+}
+.queSon .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+.queSon .flex-container .col {
+  width: 50%;
+}
+.queSon .flex-container .col .arriba {
+  height: 50%;
+}
+.queSon .flex-container .col .abajo {
+  height: 50%;
+}
+.queSon .flex-container .col .pregunta {
+  font-size: 35px;
+  font-family: 'Work Sans', sans-serif;
+  color: #0dbb88;
+  text-align: center;
+  margin: 50px 0;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.931);
+}
+.queSon .flex-container .col .respuesta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.queSon .flex-container .col .respuesta p {
+  width: 65%;
+  font-size: 22px;
+  margin: 0 auto;
+  font-family: 'Nunito', sans-serif;
+  color: rgba(0, 0, 0, 0.75);
+  text-align: center;
+  margin: 25px;
+}
+@media all and (max-width: 800px) and (min-width: 300px) {
+  .queSon {
+    height: 2070px;
+  }
+  .queSon .flex-container {
+    display: inline-block;
+  }
+  .queSon .flex-container .col {
+    width: 100%;
+  }
+  .queSon .flex-container .col .arriba {
+    width: 100%;
+  }
+  .queSon .flex-container .col .abajo {
+    width: 100%;
+  }
+  .queSon .flex-container .col .pregunta {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 30px;
+  }
+  .queSon .flex-container .col .respuesta p {
+    width: 92%;
+  }
+}
+@media all and (min-width: 800px) {
+  .queSon {
+    height: 1050px;
+  }
+  .queSon .flex-container .col .pregunta {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 30px;
+  }
+  .queSon .flex-container .col .respuesta p {
+    width: 92%;
+  }
+}
+@media all and (min-width: 1400px) and (max-width: 1900px) {
+  .queSon {
+    height: 1100px;
+  }
+  .queSon .flex-container .col .pregunta {
+    margin-top: 80px;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 30px;
+  }
+  .queSon .flex-container .col .respuesta p {
+    width: 92%;
+  }
+}
+.parallax {
+  width: 100%;
+  height: 630px;
+  background-image: url(../img/fondoParallax2.jpg);
+  background-size: cover;
+  position: relative;
+  bottom: 30px;
+  background-position: center;
+  z-index: 3;
+}
+.parallax2 {
+  bottom: 300px;
+}
+.materiales {
+  width: 100%;
+  height: 700px;
+  border-top-left-radius: 35px ;
+  border-top-right-radius: 35px ;
+  border-bottom-left-radius: 35px ;
+  border-bottom-right-radius: 35px ;
+  background-image: url("../img/fondoAmarillo.lpg.jpg");
+  background-size: cover;
+  z-index: 900;
+  position: relative;
+  bottom: 350px;
+}
+.materiales::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.22);
+  border-top-left-radius: 35px ;
+  border-top-right-radius: 35px ;
+  border-bottom-left-radius: 35px ;
+  border-bottom-right-radius: 35px ;
+}
+.materiales .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.materiales .flex-container .tituloMateriales {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 40px;
+  font-family: 'Work Sans', sans-serif;
+  text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.931);
+  color: #0dbb88;
+}
+.materiales .flex-container .col {
+  width: 50%;
+  overflow: hidden;
+}
+.materiales .flex-container .col.der {
+  font-size: 26px;
+  font-weight: 500;
+  padding: 10px;
+  font-family: 'Nunito', sans-serif;
+  color: rgba(0, 0, 0, 0.75);
+}
+.materiales .flex-container .col.izq {
+  width: 31%;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 1px 0.4px rgba(0, 0, 0, 0.931);
+          box-shadow: 0px 0px 1px 0.4px rgba(0, 0, 0, 0.931);
+}
+.materiales .flex-container .fotoCarrusel {
+  width: 300%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.materiales .flex-container .izq img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  height: 400px;
+}
+@media all and (min-width: 300px) and (max-width: 800px) {
+  .materiales {
+    height: 600px;
+  }
+  .materiales .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .materiales .flex-container .tituloMateriales {
+    width: 100%;
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Work Sans', sans-serif;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.931);
+    color: #0dbb88;
+  }
+  .materiales .flex-container .col {
+    width: 100%;
+  }
+  .materiales .flex-container .col.der {
+    font-size: 22px;
+    padding: 10px;
+    font-weight: 500;
+    font-family: 'Nunito', sans-serif;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  .materiales .flex-container .col.izq {
+    display: none;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+  .materiales .flex-container .fotoCarrusel {
+    width: 300%;
+    height: 100%;
+  }
+  .materiales .flex-container .izq img {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+@media all and (min-width: 800px) and (max-width: 1400px) {
+  .materiales {
+    height: 1100px;
+  }
+  .materiales .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  .materiales .flex-container .tituloMateriales {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Work Sans', sans-serif;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.931);
+    color: #0dbb88;
+  }
+  .materiales .flex-container .col {
+    width: 100%;
+  }
+  .materiales .flex-container .col.izq {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 10px;
+  }
+  .materiales .flex-container .fotoCarrusel {
+    width: 300%;
+  }
+  .materiales .flex-container .izq img {
+    width: 100%;
+    border-radius: 10px;
   }
 }

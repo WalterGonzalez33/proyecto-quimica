@@ -1,14 +1,28 @@
 @import url("../less/menu.less");
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
 @colorLetra:rgba(0, 0, 0, 0.75);
-@fuenteTexto: 'PT Sans', sans-serif;
+@fuenteTexto: 'Nunito', sans-serif;
 
 .resumen{
     width: 100%;
     height: 500px;
-    background-image:url("../img/fondoVerde.jpg") ;
+    border-bottom-left-radius:35px ;
+    border-bottom-right-radius:35px ;
+    background-image:url("../img/fondoAmarillo.lpg.jpg") ;
     background-size: cover;
+    z-index: 900;
+    position: relative;
+    top: 130px;
     margin-top:0 ;
+    &::before{
+        content: "";
+        width: 100%;
+        height: 100%;
+        display:block;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.19);
+    }
 
     .flex-container{
         display: flex;
@@ -30,9 +44,17 @@
             .nombreProf{
                 width: 100%;
                 font-size: 43px;
-                color: rgba(0, 0, 0, 0.75);
                 font-family: @fuenteLogo;
                 margin-left: 20px;
+                .nombreProfesora{
+                    color: @verdeLogo;
+                    display: inline;
+                    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.931);
+                }
+                .prof{
+                    color: rgba(0, 0, 0, 0.75);
+                    text-shadow: none;
+                }
             }
             .textResumen{
                 font-size: 21px;
@@ -41,6 +63,10 @@
                 margin-left: 20px;
                 margin-bottom: 120px;
                 font-weight: 500;
+
+                b{
+                    font-family: @fuenteLogo;
+                }
 
             }
         }
@@ -69,6 +95,7 @@
         height: 560px;
         background-size: cover;
         margin-top:0 ;
+        top: 120px;
     
         .flex-container{
             display: flex;
@@ -106,7 +133,7 @@
 @media all and(max-width:800px){
     .resumen{
         width: 100%;
-        height: 628px;
+        height: 700px;
         background-size: cover;
         margin-top:0 ;
     
